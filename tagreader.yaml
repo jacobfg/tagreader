@@ -290,7 +290,7 @@ pn532_i2c:
               id(url)=payload;
             }
             else if (type == "U" and localmusic != std::string::npos ) {
-              ESP_LOGD("tagreader", "Found Local Music URL tag NDEF");
+              ESP_LOGD("tagreader", "Found Local Music X URL tag NDEF");
               id(source)="localmusic";
               id(url)=payload;
             }
