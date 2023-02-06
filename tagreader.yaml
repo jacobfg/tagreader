@@ -48,8 +48,8 @@ esphome:
         green: 0%
         blue: 100%
         flash_length: 500ms
-    - switch.turn_on: buzzer_enabled
-    - switch.turn_on: led_enabled
+    - switch.turn_off: buzzer_enabled
+    - switch.turn_off: led_enabled
 
 # Define switches to control LED and buzzer from HA
 switch:
