@@ -49,7 +49,7 @@ esphome:
         blue: 100%
         flash_length: 500ms
     - switch.turn_off: buzzer_enabled
-    - switch.turn_off: led_enabled
+    - switch.turn_on: led_enabled
 
 # Define switches to control LED and buzzer from HA
 switch:
@@ -290,7 +290,7 @@ pn532_i2c:
               id(url)=payload;
             }
             else if (type == "U" and localmusic != std::string::npos ) {
-              ESP_LOGD("tagreader", "Found Local Music X URL tag NDEF");
+              ESP_LOGD("tagreader", "Found Local Music URL tag NDEF");
               id(source)="localmusic";
               id(url)=payload;
             }
